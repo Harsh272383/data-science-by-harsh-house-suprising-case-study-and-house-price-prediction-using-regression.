@@ -1,32 +1,24 @@
-# Mintlify Starter Kit
+# Project Name
+A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. The company is looking at prospective properties to buy to enter the market. You are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+## Table of Contents
+* [General Info]
+* [Conclusions]
+* [Technologies Used]
 
-### 👩‍💻 Development
+## General Information
+- The company is looking at prospective properties to buy to enter the market.     You are required to build a regression model using regularisation in order to   predict the actual value of the prospective properties and decide whether to     invest in them or not.
+- The company wants to know:
+  -Which variables are significant in predicting the price of a house                                     
+  -How well those variables describe the price of a house.
+- The 'Train.csv' dataset is being used
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## Conclusions
+- we got a decent score for both Ridge and Lasso regression.                     
+  - Ridge : Train :90.9 Test :87.4                                               
+  - Lasso : Train :89.8 Test :86.4
 
-```
-npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where mint.json is)
-
-```
-mintlify dev
-```
-
-### 😎 Publishing Changes
-
-Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
-
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## Technologies Used
+- Ridge Regression
+- Lasso Regression
